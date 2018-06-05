@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define INF 0x3fffffff
-#define V 4
+#define V 6
+
 
 int findMin( int x, int y ){
     if( x < y ){
@@ -104,11 +105,14 @@ void dijkstra( int graph[V][V], int source, int destination ){
 }
 
 int main(){
+
     int graph[V][V] = {
-            {0, 5, 10, INF},
-            {5, 0, 4, 11},
-            {10, 4, 0, 5},
-            {INF, 11, 5, 0}
+         0,      135,    INF,    87,     157,    INF,
+        135,    0,      128,    INF,    INF,    INF,
+        INF,    128,    0,      118,    44,     INF,
+        87,     INF,    118,    0,      INF,    INF,
+        157,    INF,    44,     INF,    0,      INF,
+        INF,    INF,    INF,    INF,    INF,    0
     };
 
     int source;
