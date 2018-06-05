@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <time.h>
-#define MAX_NODE 60
+#define MAX_NODE 700
 
 int main(){
     int n;
-    int adj[100][100],
+    int adj[MAX_NODE][MAX_NODE];
     int i;
     int j;
     int max;
