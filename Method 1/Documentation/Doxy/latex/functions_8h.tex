@@ -1,0 +1,95 @@
+\hypertarget{functions_8h}{}\section{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 1/functions.h File Reference}
+\label{functions_8h}\index{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 1/functions.\+h@{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 1/functions.\+h}}
+
+
+This header file contains all the required definitions of the functions used in Dijkstra Algorithm.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8h_a6b658b41c288123467513f9542de5c12}\label{functions_8h_a6b658b41c288123467513f9542de5c12}} 
+\#define {\bfseries M\+A\+I\+N\+\_\+\+H\+\_\+\+I\+N\+C\+L\+U\+D\+ED}
+\item 
+\mbox{\Hypertarget{functions_8h_af40a326b23c68a27cebe60f16634a2cb}\label{functions_8h_af40a326b23c68a27cebe60f16634a2cb}} 
+\#define {\bfseries V}~6
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{functions_8h_adb6ffd9afa8a5fec828c6437fc57ad8b}{find\+Min} (int x, int y)
+\item 
+int \hyperlink{functions_8h_afa06a4c29be8e9d2a20aadf5af152baa}{check\+Marked} (int n, int marked\+Nodes\mbox{[}$\,$\mbox{]}, int marked\+Nodes\+Index)
+\item 
+void \hyperlink{functions_8h_a08e487532d8bb254c8147b93ab5c4763}{dijkstra} (int graph\mbox{[}V\mbox{]}\mbox{[}V\mbox{]}, int source, int destination)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This header file contains all the required definitions of the functions used in Dijkstra Algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Radu Popa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\+06.\+2018. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{functions_8h_afa06a4c29be8e9d2a20aadf5af152baa}\label{functions_8h_afa06a4c29be8e9d2a20aadf5af152baa}} 
+\index{functions.\+h@{functions.\+h}!check\+Marked@{check\+Marked}}
+\index{check\+Marked@{check\+Marked}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{check\+Marked()}{checkMarked()}}
+{\footnotesize\ttfamily int check\+Marked (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{marked\+Nodes\mbox{[}$\,$\mbox{]},  }\item[{int}]{marked\+Nodes\+Index }\end{DoxyParamCaption})}
+
+This function checks if the vertex is marked. 
+\begin{DoxyParams}{Parameters}
+{\em v} & integer \\
+\hline
+{\em marked\+Nodes\mbox{[}$\,$\mbox{]}} & array of integers \\
+\hline
+{\em marked\+Nodes\+Index} & integer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8h_a08e487532d8bb254c8147b93ab5c4763}\label{functions_8h_a08e487532d8bb254c8147b93ab5c4763}} 
+\index{functions.\+h@{functions.\+h}!dijkstra@{dijkstra}}
+\index{dijkstra@{dijkstra}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{dijkstra()}{dijkstra()}}
+{\footnotesize\ttfamily void dijkstra (\begin{DoxyParamCaption}\item[{int}]{graph\mbox{[}\+V\mbox{]}\mbox{[}\+V\mbox{]},  }\item[{int}]{source,  }\item[{int}]{destination }\end{DoxyParamCaption})}
+
+This function finds the shortest path between the source and the destination nodes. 
+\begin{DoxyParams}{Parameters}
+{\em graph\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrix \\
+\hline
+{\em source} & integer \\
+\hline
+{\em destination} & integer variables \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8h_adb6ffd9afa8a5fec828c6437fc57ad8b}\label{functions_8h_adb6ffd9afa8a5fec828c6437fc57ad8b}} 
+\index{functions.\+h@{functions.\+h}!find\+Min@{find\+Min}}
+\index{find\+Min@{find\+Min}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{find\+Min()}{findMin()}}
+{\footnotesize\ttfamily int find\+Min (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+This function returns the minimum value between two numbers. 
+\begin{DoxyParams}{Parameters}
+{\em a} & First integer \\
+\hline
+{\em b} & Second integer\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file functions.\+c.
+
