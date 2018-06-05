@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <time.h>
+#define MAX_NODE 60
 
 int main(){
     int n,adj[100][100],i,j,max,node1,node2,weight;
 
-    printf("Enter the number of nodes: ");
-    scanf("%d", &n);
+    srand(time(NULL));
+    n = rand()%MAX_NODE;
+    printf("no of nodes %d\n", n);
     for(i = 1; i <= n; i++){
         for(j = 1; j <= n; j++){
             adj[i][j] = 0;
@@ -14,15 +16,15 @@ int main(){
     max = (n * (n - 1)) / 2;
     for (i = 1; i <= max; i++){
         printf("\nEdge %d\n", i);
-        printf("Node 1: ");
-        scanf("%d", &node1);
-        if(node1 == -1){
-            break;
-        }
-        printf("Node 2: ");
-        scanf("%d", &node2);
-        printf("Weight: ");
-        scanf("%d", &weight);
+        node1 = rand()%n;
+        printf(" Node 1: %d ", node1);
+
+        node2 = rand()%n;
+        printf(" Node 2: %d ", node2);
+
+        weight = rand()%200;
+        printf(" Weight: %d ", weight);
+
         if(node1 > n || node2 > n){
             printf("Invalid");
         } else{

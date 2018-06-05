@@ -2,3 +2,7 @@
 1528212304 source:c:\users\radu\desktop\random generator\random.c
 	<stdio.h>
 
+1528214038 source:c:\users\radu\documents\github\ad-project\random generator\random.c
+	<stdio.h>
+	<time.h>
+
