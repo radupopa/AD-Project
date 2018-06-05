@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define INF 9999
+#define INF 0x3fffffff
 #define V 4
 
 int findMin( int x, int y ){
@@ -93,15 +93,14 @@ void dijkstra( int graph[V][V], int source, int destination ){
         }
     }
 
-    printf("The shortest path between %d and %d\n is: ", source, destination);
+    printf("The shortest path between %d and %d is: \n", source, destination);
     for( i = shortestPathNodesIndex - 1; i >= 0; i-- ){
         printf( "%d", shortestPathNodes[i] );
         if( i > 0 ){
             printf(" --> ");
         }
     }
-    printf("\n");
-    printf( "The weight of the path is: %d\n", weightTable[wtTableR - 1][destination] );
+    printf( "\nThe weight of the path is: %d\n", weightTable[wtTableR - 1][destination] );
 }
 
 int main(){
@@ -112,8 +111,12 @@ int main(){
             {INF, 11, 5, 0}
     };
 
-    int source = 0;
-    int destination = 3;
+    int source;
+    int destination;
+    printf("Enter the source node: ");
+    scanf("%d", &source);
+    printf("Enter the destination node: ");
+    scanf("%d", &destination);
 
     dijkstra(graph, source, destination);
 
