@@ -1,5 +1,11 @@
 # depslib dependency file v1.0
-1528221029 source:c:\users\radu\documents\github\ad-project\method 1\method1.c
+1528223442 source:c:\users\radu\documents\github\ad-project\method 1\method1.c
 	<stdio.h>
 	<stdlib.h>
+
+1528223483 source:c:\users\radu\documents\github\ad-project\method 1\functions.c
+	"functions.h"
+
+1528223459 c:\users\radu\documents\github\ad-project\method 1\functions.h
+	<stdio.h>
 
