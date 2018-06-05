@@ -1,0 +1,96 @@
+\hypertarget{functions_8h}{}\section{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 2/functions.h File Reference}
+\label{functions_8h}\index{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 2/functions.\+h@{C\+:/\+Users/\+Radu/\+Documents/\+Git\+Hub/\+A\+D-\/\+Project/\+Method 2/functions.\+h}}
+
+
+This header file contains all the required definitions of the functions used in Dijkstra Algorithm.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8h_a6b658b41c288123467513f9542de5c12}\label{functions_8h_a6b658b41c288123467513f9542de5c12}} 
+\#define {\bfseries M\+A\+I\+N\+\_\+\+H\+\_\+\+I\+N\+C\+L\+U\+D\+ED}
+\item 
+\mbox{\Hypertarget{functions_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{functions_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}} 
+\#define {\bfseries I\+NF}~0x3fffffff
+\item 
+\mbox{\Hypertarget{functions_8h_af40a326b23c68a27cebe60f16634a2cb}\label{functions_8h_af40a326b23c68a27cebe60f16634a2cb}} 
+\#define {\bfseries V}~6
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{functions_8h_aaff1eb03047cba35a8d0cd8454ac3dbe}{find\+\_\+path} (int u, int v, int dist\mbox{[}$\,$\mbox{]}\mbox{[}V\mbox{]}, int pred\mbox{[}$\,$\mbox{]}\mbox{[}V\mbox{]})
+\item 
+void \hyperlink{functions_8h_a8bec5c197b1d0bb45a6233d7125e6477}{print\+\_\+path} (int dist\mbox{[}$\,$\mbox{]}\mbox{[}V\mbox{]}, int pred\mbox{[}$\,$\mbox{]}\mbox{[}V\mbox{]})
+\item 
+void \hyperlink{functions_8h_a93d75beeaa742596a1d10b7c118e3193}{floyd} (int graph\mbox{[}$\,$\mbox{]}\mbox{[}V\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This header file contains all the required definitions of the functions used in Dijkstra Algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Radu Popa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05.\+06.\+2018. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{functions_8h_aaff1eb03047cba35a8d0cd8454ac3dbe}\label{functions_8h_aaff1eb03047cba35a8d0cd8454ac3dbe}} 
+\index{functions.\+h@{functions.\+h}!find\+\_\+path@{find\+\_\+path}}
+\index{find\+\_\+path@{find\+\_\+path}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+path()}{find\_path()}}
+{\footnotesize\ttfamily void find\+\_\+path (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v,  }\item[{int}]{dist\mbox{[}$\,$\mbox{]}\mbox{[}\+V\mbox{]},  }\item[{int}]{pred\mbox{[}$\,$\mbox{]}\mbox{[}\+V\mbox{]} }\end{DoxyParamCaption})}
+
+This functions holds information about the path. 
+\begin{DoxyParams}{Parameters}
+{\em u} & integer \\
+\hline
+{\em v} & integer \\
+\hline
+{\em dist\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & array of integers \\
+\hline
+{\em pred\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & array of integers \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8h_a93d75beeaa742596a1d10b7c118e3193}\label{functions_8h_a93d75beeaa742596a1d10b7c118e3193}} 
+\index{functions.\+h@{functions.\+h}!floyd@{floyd}}
+\index{floyd@{floyd}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{floyd()}{floyd()}}
+{\footnotesize\ttfamily void floyd (\begin{DoxyParamCaption}\item[{int}]{graph\mbox{[}$\,$\mbox{]}\mbox{[}\+V\mbox{]} }\end{DoxyParamCaption})}
+
+This function finds the shortest path between the source and the destination nodes. 
+\begin{DoxyParams}{Parameters}
+{\em graph\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & array of integers variables \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8h_a8bec5c197b1d0bb45a6233d7125e6477}\label{functions_8h_a8bec5c197b1d0bb45a6233d7125e6477}} 
+\index{functions.\+h@{functions.\+h}!print\+\_\+path@{print\+\_\+path}}
+\index{print\+\_\+path@{print\+\_\+path}!functions.\+h@{functions.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+path()}{print\_path()}}
+{\footnotesize\ttfamily void print\+\_\+path (\begin{DoxyParamCaption}\item[{int}]{dist\mbox{[}$\,$\mbox{]}\mbox{[}\+V\mbox{]},  }\item[{int}]{pred\mbox{[}$\,$\mbox{]}\mbox{[}\+V\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & array of integers \\
+\hline
+{\em pred\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & array of integers \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file functions.\+c.
+
